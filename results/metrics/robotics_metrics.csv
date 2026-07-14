@@ -1,0 +1,13 @@
+station,detection_accuracy,avg_response_days,station_coverage,energy_efficiency,true_positives,false_negatives
+Aotizhongxin,0.8604,0.67,1.0,0.8042,2262,367
+Changping,0.9356,0.69,1.0,0.7041,2079,143
+Dingling,0.9083,0.76,1.0,0.5946,1822,184
+Dongsi,0.9136,0.7,1.0,0.9429,2559,242
+Guanyuan,0.9204,0.7,1.0,0.926,2566,222
+Gucheng,0.9273,0.72,1.0,0.9171,2575,202
+Huairou,0.9203,0.68,1.0,0.6834,1964,170
+Nongzhanguan,0.9035,0.66,1.0,0.9193,2481,265
+Shunyi,0.9401,0.67,1.0,0.9526,2339,149
+Tiantan,0.9224,0.63,1.0,0.8643,2483,209
+Wanliu,0.8863,0.69,1.0,0.8011,2307,296
+Wanshouxigong,0.904,0.66,1.0,0.8931,2534,269
