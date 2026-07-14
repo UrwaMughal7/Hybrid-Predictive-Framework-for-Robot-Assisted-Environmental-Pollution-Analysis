@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scipy
+statsmodels
+pmdarima
+scikit-learn
+tensorflow
+pillow
+seaborn
+tabulate
