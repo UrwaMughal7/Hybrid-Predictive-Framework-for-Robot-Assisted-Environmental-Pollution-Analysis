@@ -35,6 +35,49 @@ The predictions then feed a **robot decision module** — a 4-state machine (`PA
 10. **Animations & video export** — robot dashboard and cascade animations
 11. **Final summary** — metrics, reports, and saved outputs
 
+## 📈 Results
+
+Test-set performance averaged across all 12 stations (hourly PM2.5, 20% hold-out):
+
+| Model | MAE ↓ | RMSE ↓ | R² ↑ |
+|---|---|---|---|
+| ARIMAX | 26.62 | 39.82 | 0.765 |
+| LSTM | 17.41 | 31.50 | 0.907 |
+| **Hybrid ARIMA-LSTM** | **11.20** | **18.56** | **0.949** |
+
+The hybrid model cuts MAE by **58%** vs. ARIMAX and **36%** vs. LSTM alone.
+
+![Model comparison — RMSE](assets/model_comparison_RMSE.png)
+
+![Final metrics heatmap](assets/final_metrics_heatmap.png)
+
+**Hybrid prediction vs. ground truth (Tiantan station):**
+
+![Hybrid prediction — Tiantan](assets/hybrid_pred_Tiantan.png)
+
+**Robot monitoring performance** (test period, all stations): **91.2%** hazard detection accuracy, **0.69 days** average response time, **100%** station coverage.
+
+![Robot dashboard animation](assets/robot_full_dashboard.gif)
+
+![Spatial hotspot map](assets/spatial_hotspot_map.png)
+
+<details>
+<summary>More figures</summary>
+
+![System architecture](assets/system_architecture.png)
+
+![Cross-station hybrid performance](assets/crossstation_hybrid_bars.png)
+
+![Adaptive sampling across stations](assets/adaptive_sampling_all_stations.png)
+
+![Robot dashboard — Tiantan](assets/robot_dashboard_Tiantan.png)
+
+![Correlation heatmap](assets/02_correlation_heatmap.png)
+
+![Multi-sensor cascade animation](assets/cascade_Tiantan.gif)
+
+</details>
+
 ## 🤖 Robot Decision System
 
 WHO-based daily PM2.5 thresholds (µg/m³):
